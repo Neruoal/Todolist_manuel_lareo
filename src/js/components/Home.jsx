@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faX} from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -13,6 +16,7 @@ const Home = () => {
 		<div className="Container">
 			<h1>Todos</h1>
 			<ul>
+				
 				<li>
 					<input
 						type="text" placeholder="What do you need to do?"
@@ -29,17 +33,22 @@ const Home = () => {
 				{todos.map((item, index) => (
 					<li>
 						{item}{""}
-						<i
-						
+						<FontAwesomeIcon icon={faX} 
 						onClick={() =>
 							setTodos (
 								todos.filter(
 									(t, currentIndex) =>
-										index != currentIdenx
+										index != currentIndex
 								)
 							)
-							
-						}></i>
+						}
+						/>
+						
+						
+						
+						
+
+						
 					</li>
 
 
