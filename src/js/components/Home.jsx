@@ -11,7 +11,7 @@ const Home = () => {
 
 	return (
 		<div className="Container">
-			<h1>Todos {inputValue}</h1>
+			<h1>Todos</h1>
 			<ul>
 				<li>
 					<input
@@ -30,7 +30,7 @@ const Home = () => {
 					<li>
 						{item}{""}
 						<i
-						className=""
+						
 						onClick={() =>
 							setTodos (
 								todos.filter(
@@ -48,7 +48,7 @@ const Home = () => {
 				}
 
 			</ul>
-			<div>{todos.length} tasks</div>
+			<div className="task">{todos.length} tasks</div>
 		</div>
 	
 
