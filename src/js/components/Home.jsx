@@ -21,14 +21,25 @@ const Home = () => {
 						onKeyUp={(e) => {
 							if (e.key === "Enter") {
 								setTodos(todos.concat([inputValue]));
-					
+								setInputValue("");
 							}
 						}}
 						></input>
 				</li>
-				{todos.map((t) => (
+				{todos.map((item, index) => (
 					<li>
-						Make the bed
+						{item}{""}
+						<i
+						className=""
+						onClick={() =>
+							setTodos (
+								todos.filter(
+									(t, currentIndex) =>
+										index != currentIdenx
+								)
+							)
+							
+						}></i>
 					</li>
 
 
