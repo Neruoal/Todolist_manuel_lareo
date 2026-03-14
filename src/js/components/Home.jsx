@@ -15,6 +15,7 @@ const Home = () => {
 	return (
 		<div className="Container">
 			<h1>Todos</h1>
+			<div className="lista">
 			<ul>
 				
 				<li>
@@ -34,6 +35,7 @@ const Home = () => {
 					<li>
 						{item}{""}
 						<FontAwesomeIcon icon={faX} 
+						className="icono"
 						onClick={() =>
 							setTodos (
 								todos.filter(
@@ -57,6 +59,7 @@ const Home = () => {
 				}
 
 			</ul>
+			</div>
 			<div className="task">{todos.length} tasks</div>
 		</div>
 	

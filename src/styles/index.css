@@ -22,8 +22,15 @@ input {
 .container {
     background-color: rgb(198, 198, 198);
     width: 70%;
+    border: 1px solid red
 }
 
 .task {
     margin-left: 450px;
 }
+
+.icono {
+    float: right;
+    padding-top: 3px;
+}
+
